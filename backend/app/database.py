@@ -1,10 +1,10 @@
 from typing import AsyncGenerator
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker, engine
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.orm import DeclarativeBase
 from app.config import settings
 
 #Initialize async engine
-engine = create_async_engine(settings.DATANASE_URL, echo=True, # Log SQL queries to terminal for debugging during dev)
+engine = create_async_engine(settings.DATABASE_URL, echo=True)  # Log SQL queries to terminal for debugging during dev
 
 #Create the session factory
 AsyncSessionLocal = async_sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False,
