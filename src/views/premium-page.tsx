@@ -58,23 +58,6 @@ const tiers: PricingTier[] = [
     ],
     cta: 'Get Started',
   },
-  {
-    name: 'Team',
-    price: 29.99,
-    annualPrice: 17.99,
-    description: 'For teams that learn together',
-    features: [
-      { text: 'Everything in Pro', included: true },
-      { text: 'Team analytics dashboard', included: true },
-      { text: 'Admin management tools', included: true },
-      { text: 'Custom branding', included: true },
-      { text: 'Bulk license management', included: true },
-      { text: 'Dedicated account manager', included: true },
-      { text: 'API access', included: true },
-      { text: 'SSO integration', included: true },
-    ],
-    cta: 'Get Started',
-  },
 ];
 
 const faqs = [
@@ -85,10 +68,6 @@ const faqs = [
   {
     question: 'Is there a free trial for Pro?',
     answer: 'Absolutely! New users get a 7-day free trial of Pro. You can explore all premium features risk-free. If you decide not to continue, you will automatically be moved to the Free plan.',
-  },
-  {
-    question: 'How does team billing work?',
-    answer: 'Team plans are billed per seat per month. You can add or remove team members at any time, and billing adjusts automatically. Annual team plans offer the same 40% savings as individual plans.',
   },
   {
     question: 'Do you offer student discounts?',
