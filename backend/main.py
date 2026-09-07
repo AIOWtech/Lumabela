@@ -7,6 +7,12 @@ from app.auth import router as auth_router
 
 # importing the model modules registers them on Base.metadata — needed before create_all
 from models.user import User  # noqa: F401
+from models.topic import Topic  # noqa: F401
+from models.lesson import Lesson  # noqa: F401
+from models.quiz import Quiz  # noqa: F401
+from models.question import Question  # noqa: F401
+from models.attempt import Attempt  # noqa: F401
+from models.note import Note  # noqa: F401
 
 app = FastAPI(title=settings.PROJECT_NAME)
 
