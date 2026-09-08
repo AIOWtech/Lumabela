@@ -11,16 +11,11 @@ const features = [
   { emoji: '🌐', title: 'Community', desc: 'Join learners worldwide with leaderboards and social features.', color: 'text-chart-4', bg: 'bg-chart-4/10' },
 ];
 
-const courses = [
-  { title: 'Advanced React Patterns', instructor: 'Sarah Chen', category: 'programming', rating: 4.9, enrolled: 15420, progress: 68, isPremium: false },
-  { title: 'UI/UX Design Masterclass', instructor: 'Marcus Rivera', category: 'design', rating: 4.8, enrolled: 22150, progress: 35, isPremium: true },
-  { title: 'Machine Learning Fundamentals', instructor: 'Dr. Priya Patel', category: 'data-science', rating: 4.7, enrolled: 31200, progress: 12, isPremium: false },
-];
 
 const pricing = [
   { name: 'Free', price: '$0', period: '/forever', features: ['10 free courses', 'Basic AI tutoring', 'Progress tracking', 'Community access'], cta: 'Get Started', popular: false, page: 'login' as const },
   { name: 'Pro', price: '$12.99', period: '/month', features: ['All 200+ courses', 'Advanced AI tutoring', 'Certificates & badges', 'Offline downloads', 'Priority support'], cta: 'Go Pro', popular: true, page: 'register' as const },
-  { name: 'Team', price: '$29.99', period: '/month', features: ['Everything in Pro', 'Team analytics', 'Admin dashboard', 'Custom learning paths', 'Dedicated support'], cta: 'Contact Sales', popular: false, page: 'contact' as const },
+  
 ];
 
 export default function LandingPage() {
